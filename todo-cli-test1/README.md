@@ -28,8 +28,25 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`todo-cli-test1 add [FILE]`](#todo-cli-test1-add-file)
 * [`todo-cli-test1 hello [FILE]`](#todo-cli-test1-hello-file)
 * [`todo-cli-test1 help [COMMAND]`](#todo-cli-test1-help-command)
+
+## `todo-cli-test1 add [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ todo-cli-test1 add [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/add.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/add.ts)_
 
 ## `todo-cli-test1 hello [FILE]`
 
