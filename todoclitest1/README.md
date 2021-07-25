@@ -28,24 +28,20 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`todoclitest1 add [FILE]`](#todoclitest1-add-file)
+* [`todoclitest1 add [TODO]`](#todoclitest1-add-todo)
 * [`todoclitest1 hello [FILE]`](#todoclitest1-hello-file)
 * [`todoclitest1 help [COMMAND]`](#todoclitest1-help-command)
 * [`todoclitest1 show`](#todoclitest1-show)
+* [`todoclitest1 showhidecompleted [FILE]`](#todoclitest1-showhidecompleted-file)
 * [`todoclitest1 todo`](#todoclitest1-todo)
 
-## `todoclitest1 add [FILE]`
+## `todoclitest1 add [TODO]`
 
-describe the command here
+Add new todo to list
 
 ```
 USAGE
-  $ todoclitest1 add [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ todoclitest1 add [TODO]
 ```
 
 _See code: [src/commands/add.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.1/src/commands/add.ts)_
@@ -97,6 +93,22 @@ USAGE
 ```
 
 _See code: [src/commands/show.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.1/src/commands/show.ts)_
+
+## `todoclitest1 showhidecompleted [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ todoclitest1 showhidecompleted [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/showhidecompleted.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.1/src/commands/showhidecompleted.ts)_
 
 ## `todoclitest1 todo`
 
