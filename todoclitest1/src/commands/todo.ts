@@ -12,18 +12,16 @@ export default class Todo extends Command {
     let todos: TodoItem[] = [];
 
     // Collection of todos
-    let collection: TodoCollection = new JsonTodoCollection("Hassan", todos);
+    let collection: TodoCollection = new JsonTodoCollection(todos);
     // For displaying completed tasks
     let showCompleted: boolean = true;
 
     // Function to display ToDo list, this function will be used with inquirer
     function displayTodoList(): void {
       console.log(
-        `${collection.userName}'s Todo List \nTotal : ${
-          collection.getItemCounts().total
-        } \tComplted : ${collection.getItemCounts().complete} \tIncomplete : ${
-          collection.getItemCounts().incomplete
-        }`
+        `Todo List \nTotal : ${collection.getItemCounts().total} \tComplted : ${
+          collection.getItemCounts().complete
+        } \tIncomplete : ${collection.getItemCounts().incomplete}`
       );
       collection
         .getTodoItems(showCompleted)

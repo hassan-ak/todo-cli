@@ -12,9 +12,9 @@ type schemaType = {
 export class JsonTodoCollection extends TodoCollection {
   private database: lowdb.LowdbSync<schemaType>;
 
-  constructor(public userName: string, todoItems: TodoItem[] = []) {
+  constructor(todoItems: TodoItem[] = []) {
     // refers to TodoCollection class
-    super(userName, []);
+    super([]);
     // Create file with name to store data
     this.database = lowdb(new FileSync("Todos.json"));
     // check if the data base has already stored tasks in it

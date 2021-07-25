@@ -16,7 +16,7 @@ export class TodoCollection {
   // itemMap have keys in form of number an dvalues are of TodoItem type
   protected itemMap = new Map<number, TodoItem>();
 
-  constructor(public userName: string, public todoItems: TodoItem[] = []) {
+  constructor(public todoItems: TodoItem[] = []) {
     // no statements required here
     // TS compiler will auto genrate these
     todoItems.forEach((item) => this.itemMap.set(item.id, item));
