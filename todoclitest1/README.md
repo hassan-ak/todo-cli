@@ -19,7 +19,7 @@ $ npm install -g todoclitest1
 $ todoclitest1 COMMAND
 running command...
 $ todoclitest1 (-v|--version|version)
-todoclitest1/0.0.0 win32-x64 node-v12.17.0
+todoclitest1/0.0.1 win32-x64 node-v12.17.0
 $ todoclitest1 --help [COMMAND]
 USAGE
   $ todoclitest1 COMMAND
@@ -28,10 +28,27 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`todoclitest1 add [FILE]`](#todoclitest1-add-file)
 * [`todoclitest1 hello [FILE]`](#todoclitest1-hello-file)
 * [`todoclitest1 help [COMMAND]`](#todoclitest1-help-command)
-* [`todoclitest1 show [FILE]`](#todoclitest1-show-file)
+* [`todoclitest1 show`](#todoclitest1-show)
 * [`todoclitest1 todo`](#todoclitest1-todo)
+
+## `todoclitest1 add [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ todoclitest1 add [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/add.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.1/src/commands/add.ts)_
 
 ## `todoclitest1 hello [FILE]`
 
@@ -51,7 +68,7 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/hello.ts)_
+_See code: [src/commands/hello.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.1/src/commands/hello.ts)_
 
 ## `todoclitest1 help [COMMAND]`
 
@@ -70,21 +87,16 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
-## `todoclitest1 show [FILE]`
+## `todoclitest1 show`
 
 describe the command here
 
 ```
 USAGE
-  $ todoclitest1 show [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ todoclitest1 show
 ```
 
-_See code: [src/commands/show.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/show.ts)_
+_See code: [src/commands/show.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.1/src/commands/show.ts)_
 
 ## `todoclitest1 todo`
 
@@ -95,5 +107,5 @@ USAGE
   $ todoclitest1 todo
 ```
 
-_See code: [src/commands/todo.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/todo.ts)_
+_See code: [src/commands/todo.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.1/src/commands/todo.ts)_
 <!-- commandsstop -->
