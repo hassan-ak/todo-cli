@@ -30,7 +30,8 @@ USAGE
 <!-- commands -->
 * [`todoclitest1 hello [FILE]`](#todoclitest1-hello-file)
 * [`todoclitest1 help [COMMAND]`](#todoclitest1-help-command)
-* [`todoclitest1 todo [FILE]`](#todoclitest1-todo-file)
+* [`todoclitest1 show [FILE]`](#todoclitest1-show-file)
+* [`todoclitest1 todo`](#todoclitest1-todo)
 
 ## `todoclitest1 hello [FILE]`
 
@@ -69,18 +70,29 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
-## `todoclitest1 todo [FILE]`
+## `todoclitest1 show [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ todoclitest1 todo [FILE]
+  $ todoclitest1 show [FILE]
 
 OPTIONS
   -f, --force
   -h, --help       show CLI help
   -n, --name=name  name to print
+```
+
+_See code: [src/commands/show.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/show.ts)_
+
+## `todoclitest1 todo`
+
+describe the command here
+
+```
+USAGE
+  $ todoclitest1 todo
 ```
 
 _See code: [src/commands/todo.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/todo.ts)_
