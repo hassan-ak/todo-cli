@@ -40,6 +40,7 @@ USAGE
 - [`todo hello [FILE]`](#todo-hello-file)
 - [`todo help [COMMAND]`](#todo-help-command)
 - [`todo list`](#todo-list)
+- [`todo remove [FILE]`](#todo-remove-file)
 - [`todo togglestatus [ID]`](#todo-togglestatus-id)
 
 ## `todo add [TODO]`
@@ -95,7 +96,7 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2
 
 ## `todo list`
 
-Display list of todos
+Display list of all / incomplete todos
 
 ```
 USAGE
@@ -108,16 +109,30 @@ OPTIONS
 
 _See code: [src/commands/list.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/list.ts)_
 
+## `todo remove [FILE]`
+
+Remove completed todos from the list
+
+```
+USAGE
+  $ todo remove [FILE]
+
+OPTIONS
+  -h, --help       show CLI help
+```
+
+_See code: [src/commands/remove.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/remove.ts)_
+
 ## `todo togglestatus [ID]`
 
-describe the command here
+Toolge completion status of a Todo by proving its ID.
 
 ```
 USAGE
   $ todo togglestatus [ID]
 
 OPTIONS
-  -h, --help       show CLI help
+  -h, --help  show CLI help
 ```
 
 _See code: [src/commands/togglestatus.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/togglestatus.ts)_

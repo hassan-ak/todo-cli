@@ -8,7 +8,7 @@ import chalk = require("chalk");
 
 export default class List extends Command {
   // Description for the command
-  static description = "Display list of all todos";
+  static description = "Display list of all / incomplete todos";
 
   // Flag defination for the command
   static flags = {
