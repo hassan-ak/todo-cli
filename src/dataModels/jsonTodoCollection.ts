@@ -9,6 +9,7 @@ type schemaType = {
   tasks: { id: number; task: string; complete: boolean }[];
 };
 
+// Sub-class of the TodoCollection class
 export class JsonTodoCollection extends TodoCollection {
   private database: lowdb.LowdbSync<schemaType>;
 

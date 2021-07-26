@@ -46,7 +46,7 @@ export default class Remove extends Command {
         collection.removeComplete();
         this.log(
           chalk.green("[Success]"),
-          "Completed todos removed from the list"
+          "Completed todos removed from the list."
         );
       }
     }

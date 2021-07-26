@@ -59,24 +59,18 @@ export default class Togglestatus extends Command {
           if (collection.getTodoById(parseInt(id))?.complete) {
             collection.markComplete(parseInt(id), false);
             this.log(
-              chalk.green("[Success]"),
-              "status of",
-              chalk.blue(collection.getTodoById(parseInt(id))?.task),
-              "is changed to",
-              chalk.redBright("In-Complete"),
-              "."
+              `${chalk.green("[Success]")} status of ${chalk.blue(
+                collection.getTodoById(parseInt(id))?.task
+              )} is changed to ${chalk.redBright("In-Complete")}.`
             );
           }
           // if current status is in-complete
           else {
             collection.markComplete(parseInt(id), true);
             this.log(
-              chalk.green("[Success]"),
-              "status of",
-              chalk.blue(collection.getTodoById(parseInt(id))?.task),
-              "is changed to",
-              chalk.greenBright("Complete"),
-              "."
+              `${chalk.green("[Success]")} status of ${chalk.blue(
+                collection.getTodoById(parseInt(id))?.task
+              )} is changed to ${chalk.greenBright("Complete")}.`
             );
           }
         }

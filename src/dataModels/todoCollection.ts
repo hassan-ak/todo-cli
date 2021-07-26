@@ -8,6 +8,7 @@ type ItemCounts = {
   complete: number;
 };
 
+// TodoCollection Class
 export class TodoCollection {
   // to define item id
   private nextId: number = 1;

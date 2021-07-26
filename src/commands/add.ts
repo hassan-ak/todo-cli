@@ -28,7 +28,7 @@ export default class Add extends Command {
     const todo = args.todo;
 
     // Check if todo provided in the argumennt or not
-    // If todo provided
+    // If argument provided
     if (todo) {
       this.log(
         chalk.green("[Success]"),
@@ -37,7 +37,7 @@ export default class Add extends Command {
       );
       collection.addTodo(todo);
     }
-    // if no todo provided
+    // if no argument provided
     else {
       this.error(chalk.red("Please specify the new todo"));
     }

@@ -40,7 +40,7 @@ USAGE
 - [`todo hello [FILE]`](#todo-hello-file)
 - [`todo help [COMMAND]`](#todo-help-command)
 - [`todo list`](#todo-list)
-- [`todo remove [FILE]`](#todo-remove-file)
+- [`todo remove`](#todo-remove)
 - [`todo togglestatus [ID]`](#todo-togglestatus-id)
 
 ## `todo add [TODO]`
@@ -109,7 +109,7 @@ OPTIONS
 
 _See code: [src/commands/list.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/list.ts)_
 
-## `todo remove [FILE]`
+## `todo remove`
 
 Remove completed todos from the list
 

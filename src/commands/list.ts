@@ -45,6 +45,8 @@ export default class List extends Command {
     }
     // if todos in the list
     else {
+      // Check for flag to show or hide complted todos
+      // If completed list to be displayed
       if (!flags.mask) {
         // Title
         console.log(chalk.bgMagentaBright("Complete Todo List"));
@@ -57,7 +59,9 @@ export default class List extends Command {
               item.complete ? chalk.green("Yes") : chalk.red("No"),
             ])
           );
-      } else {
+      }
+      // list by hiding completed todos
+      else {
         console.log(chalk.bgMagentaBright("List with completed todos hidden"));
         collection
           .getTodoItems(false)
