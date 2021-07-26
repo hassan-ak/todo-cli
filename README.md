@@ -103,6 +103,7 @@ USAGE
 
 OPTIONS
   -h, --help  show CLI help
+  -m, --mask  Hide completed Todos
 ```
 
 _See code: [src/commands/list.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/list.ts)_

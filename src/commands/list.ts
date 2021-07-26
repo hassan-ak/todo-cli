@@ -13,18 +13,19 @@ export default class List extends Command {
   // Flag defination for the command
   static flags = {
     help: flags.help({ char: "h" }),
+    mask: flags.boolean({
+      char: "m",
+      description: "Hide completed Todos",
+    }),
   };
 
   // Command Function
   async run() {
-    this.parse(List);
+    const { flags } = this.parse(List);
 
     // list of todos and in case there is no data in Json file and collection of todos
     let todos: TodoItem[] = [];
     let collection: TodoCollection = new JsonTodoCollection(todos);
-
-    // Title
-    console.log(chalk.bgMagentaBright("Todo List"));
 
     // Initilize table
     const table1 = new Table({
@@ -38,19 +39,36 @@ export default class List extends Command {
     // Check if there are any todos in the storage
     // If no todos in the list
     if (collection.getItemCounts().total == 0) {
+      // Title
+      console.log(chalk.bgMagentaBright("Todo List"));
       table1.push(["---", "There is no Todo in the List", "---"]);
     }
     // if todos in the list
     else {
-      collection
-        .getTodoItems(true)
-        .forEach((item) =>
-          table1.push([
-            item.id,
-            item.task,
-            item.complete ? chalk.green("Yes") : chalk.red("No"),
-          ])
-        );
+      if (!flags.mask) {
+        // Title
+        console.log(chalk.bgMagentaBright("Complete Todo List"));
+        collection
+          .getTodoItems(true)
+          .forEach((item) =>
+            table1.push([
+              item.id,
+              item.task,
+              item.complete ? chalk.green("Yes") : chalk.red("No"),
+            ])
+          );
+      } else {
+        console.log(chalk.bgMagentaBright("List with completed todos hidden"));
+        collection
+          .getTodoItems(false)
+          .forEach((item) =>
+            table1.push([
+              item.id,
+              item.task,
+              item.complete ? chalk.green("Yes") : chalk.red("No"),
+            ])
+          );
+      }
     }
     // Display table
     this.log(table1.toString());
