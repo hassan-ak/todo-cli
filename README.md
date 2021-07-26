@@ -37,7 +37,6 @@ USAGE
 <!-- commands -->
 
 - [`todo add [TODO]`](#todo-add-todo)
-- [`todo hello [FILE]`](#todo-hello-file)
 - [`todo help [COMMAND]`](#todo-help-command)
 - [`todo list`](#todo-list)
 - [`todo remove`](#todo-remove)
@@ -56,26 +55,6 @@ OPTIONS
 ```
 
 _See code: [src/commands/add.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/add.ts)_
-
-## `todo hello [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ todo hello [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ todo hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/hello.ts)_
 
 ## `todo help [COMMAND]`
 
