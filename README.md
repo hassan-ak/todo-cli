@@ -37,9 +37,10 @@ USAGE
 <!-- commands -->
 
 - [`todo add [TODO]`](#todo-add-todo)
-- [`todo list`](#todo-list)
 - [`todo hello [FILE]`](#todo-hello-file)
 - [`todo help [COMMAND]`](#todo-help-command)
+- [`todo list`](#todo-list)
+- [`todo togglestatus [ID]`](#todo-togglestatus-id)
 
 ## `todo add [TODO]`
 
@@ -50,24 +51,10 @@ USAGE
   $ todo add [TODO]
 
 OPTIONS
-  -h, --help       show CLI help
-```
-
-_See code: [add.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/add.ts)_
-
-## `todo list`
-
-Display list of todos
-
-```
-USAGE
-  $ todo list
-
-OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [list.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/list.ts)_
+_See code: [src/commands/add.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/add.ts)_
 
 ## `todo hello [FILE]`
 
@@ -105,5 +92,33 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
+
+## `todo list`
+
+Display list of todos
+
+```
+USAGE
+  $ todo list
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [src/commands/list.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/list.ts)_
+
+## `todo togglestatus [ID]`
+
+describe the command here
+
+```
+USAGE
+  $ todo togglestatus [ID]
+
+OPTIONS
+  -h, --help       show CLI help
+```
+
+_See code: [src/commands/togglestatus.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/togglestatus.ts)_
 
 <!-- commandsstop -->
