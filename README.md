@@ -9,6 +9,7 @@ Project 02 BootCamp 2021: Todo CLI
 
 <!-- toc -->
 
+- [todo-cli-hassan](#todo-cli-hassan)
 - [Usage](#usage)
 - [Commands](#commands)
 <!-- tocstop -->
@@ -35,8 +36,38 @@ USAGE
 
 <!-- commands -->
 
+- [`todo add [TODO]`](#todo-add-todo)
+- [`todo list`](#todo-list)
 - [`todo hello [FILE]`](#todo-hello-file)
 - [`todo help [COMMAND]`](#todo-help-command)
+
+## `todo add [TODO]`
+
+Add new todo to list
+
+```
+USAGE
+  $ todo add [TODO]
+
+OPTIONS
+  -h, --help       show CLI help
+```
+
+_See code: [add.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/add.ts)_
+
+## `todo list`
+
+Display list of todos
+
+```
+USAGE
+  $ todo list
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+_See code: [list.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/list.ts)_
 
 ## `todo hello [FILE]`
 
