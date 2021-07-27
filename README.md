@@ -1,3 +1,12 @@
+# Project 02 BootCamp 2021: Todo CLI
+
+Reading material
+
+- [oclif: The open CLI Framework](https://oclif.io/)
+- [oclif Introduction](https://oclif.io/docs/introduction)
+- [Getting started with oclif by creating a todo cli app](https://medium.com/the-z/getting-started-with-oclif-by-creating-a-todo-cli-app-b3a2649adbcf)
+- [Todo CLI Repo](https://github.com/dalenguyen/todo-cli)
+
 # todo-cli-hassan
 
 Project 02 BootCamp 2021: Todo CLI
@@ -8,14 +17,16 @@ Project 02 BootCamp 2021: Todo CLI
 [![License](https://img.shields.io/npm/l/todo-cli-hassan.svg)](https://github.com/hassan-ak/todo-cli/blob/master/package.json)
 
 <!-- toc -->
-* [todo-cli-hassan](#todo-cli-hassan)
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [todo-cli-hassan](#todo-cli-hassan)
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g todo-cli-hassan
 $ todo COMMAND
@@ -27,17 +38,19 @@ USAGE
   $ todo COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`todo add [TODO]`](#todo-add-todo)
-* [`todo help [COMMAND]`](#todo-help-command)
-* [`todo inquire`](#todo-inquire)
-* [`todo list`](#todo-list)
-* [`todo remove`](#todo-remove)
-* [`todo togglestatus [ID]`](#todo-togglestatus-id)
+
+- [`todo add [TODO]`](#todo-add-todo)
+- [`todo help [COMMAND]`](#todo-help-command)
+- [`todo inquire`](#todo-inquire)
+- [`todo list`](#todo-list)
+- [`todo remove`](#todo-remove)
+- [`todo togglestatus [ID]`](#todo-togglestatus-id)
 
 ## `todo add [TODO]`
 
@@ -126,4 +139,5 @@ OPTIONS
 ```
 
 _See code: [src/commands/togglestatus.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/togglestatus.ts)_
+
 <!-- commandsstop -->
