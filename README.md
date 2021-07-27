@@ -38,6 +38,7 @@ USAGE
 
 - [`todo add [TODO]`](#todo-add-todo)
 - [`todo help [COMMAND]`](#todo-help-command)
+- [`todo inquire`](#todo-inquire)
 - [`todo list`](#todo-list)
 - [`todo remove`](#todo-remove)
 - [`todo togglestatus [ID]`](#todo-togglestatus-id)
@@ -73,6 +74,20 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.2/src/commands/help.ts)_
 
+## `todo inquire`
+
+Use App with user prompting other than Commands
+
+```
+USAGE
+  $ todo inquire
+
+OPTIONS
+  -h, --help       show CLI help
+```
+
+_See code: [src/commands/inquire.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/inquire.ts)_
+
 ## `todo list`
 
 Display list of all / incomplete todos
@@ -90,14 +105,14 @@ _See code: [src/commands/list.ts](https://github.com/hassan-ak/todo-cli/blob/v0.
 
 ## `todo remove`
 
-Remove completed todos from the list
+Remove Completed todos
 
 ```
 USAGE
-  $ todo remove [FILE]
+  $ todo remove
 
 OPTIONS
-  -h, --help       show CLI help
+  -h, --help  show CLI help
 ```
 
 _See code: [src/commands/remove.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/remove.ts)_
