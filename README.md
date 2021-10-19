@@ -2,6 +2,15 @@
 
 By doing this project we are able to learn following:-
 
+- How to create a TypeScript project using oclif
+- Create global public npm package
+- Publish NPM package
+- Third Party Packages
+  - inquirer
+  - lowdb
+  - chalk
+  - table
+
 ## Steps to code "Todo CLI"
 
 ### 1. Create a basic app using oclif
