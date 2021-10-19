@@ -68,11 +68,13 @@ Published app on npm code as a global package using `npm publish --access public
 
    ![Remove command](./outputs/6-remove.PNG)
 
-7. Inqquire command
+7. Inquire command
 
    Command details
 
    ![Inquire command](./outputs/7-inquire.PNG)
+
+   usage of the app with inquire command can be viewed by visiting the following [link](https://github.com/hassan-ak/todo-app-typescript#3-add-inquirerjs-to-prompt-user-for-input).
 
 ## Reading material
 
