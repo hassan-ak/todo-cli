@@ -18,7 +18,61 @@ For creating command use `npx oclif command [command name]`, this will not only 
 
 ### 4. Publish App
 
-Published app on npm code as a global package using “npm publish --access public”
+Published app on npm code as a global package using `npm publish --access public`
+
+## Usage Example
+
+1. Installation
+
+   ![Installation](./outputs/1-installation.PNG)
+
+2. Version and commands details
+
+   ![Version and commands](./outputs/2-version-commands.PNG)
+
+3. Add command
+
+   ![Add command](./outputs/3-add.PNG)
+
+4. List command
+
+   Command details
+
+   ![Command Details](./outputs/4-0-list.PNG)
+
+   No todos in the list
+
+   ![Empty List](./outputs/4-1-list.PNG)
+
+   Todos in the list
+
+   ![Non-empty List](./outputs/4-2-list.PNG)
+
+5. Toggle command
+
+   Command details
+
+   ![Toggle command](./outputs/5-toggle.PNG)
+
+   List Conatining completed todos
+
+   ![List Conatining completed todos](./outputs/4-3-list.PNG)
+
+   List with-out completed todos
+
+   ![List with-out completed todos](./outputs/4-4-list.PNG)
+
+6. Remove command
+
+   Command details
+
+   ![Remove command](./outputs/6-remove.PNG)
+
+7. Inqquire command
+
+   Command details
+
+   ![Inquire command](./outputs/7-inquire.PNG)
 
 ## Reading material
 
