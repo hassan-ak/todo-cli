@@ -226,3 +226,5 @@ OPTIONS
 _See code: [src/commands/togglestatus.ts](https://github.com/hassan-ak/todo-cli/blob/v0.0.0/src/commands/togglestatus.ts)_
 
 <!-- commandsstop -->
+
+---
