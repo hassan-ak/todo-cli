@@ -1,4 +1,4 @@
-# Project 02 BootCamp 2021: Todo CLI
+# BootCamp2021 Project02: Todo CLI
 
 By doing this project we are able to learn following:-
 
